@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking appoinment app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Booking an appoinment</h1>
+    </header>
+    <section class="container">
+        <form id="myForm">
+            <h2>Add user</h2>
+            <div>
+                <label for="username">Name:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div>
+                <label for="emailId">Email:</label>
+                <input type="email" id="emailId" required>
+            </div>
+            <input class="btn" type="submit" value="Submit">
+        </form>
+        <ul id="listOfUsers"></ul>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

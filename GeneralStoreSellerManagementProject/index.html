@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System of General Store</title>
+</head>
+<body>
+    <header>
+        <h1>Inventory Management System</h1>
+    </header>
+    <!-- <h1>Inventory Management System</h1> -->
+    <section class="container">
+        <form id="myForm">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" placeholder="Enter product name">
+            <label for="product-price">Product Price:</label>
+            <input type="number" id="product-price" placeholder="Enter product price">
+            <label for="product-quantity">Product Quantity:</label>
+            <input type="number" id="product-quantity" placeholder="Enter product quantity">
+            <button onclick="addProduct()">Add Product</button>
+
+            <h2>Sell Product</h2>
+            <label for="sell-product-name">Product Name:</label>
+            <input type="text" id="sell-product-name" placeholder="Enter product name">
+            <label for="sell-quantity">Quantity to Sell:</label>
+            <input type="number" id="sell-quantity" placeholder="Enter quantity to sell">
+            <button onclick="sellProduct()">Sell Product</button>
+
+            <h2>Inventory</h2>
+            <ul id="inventory-list"></ul>
+        </form>
+    </section>    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
